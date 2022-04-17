@@ -10,13 +10,13 @@ Ofcourse you may take full advantage of editing it yourself through the code if 
 // Page Styling ------------------------------------------------------------------
 
 export let pageStyling = {
-    backgroundColor: "#201f25", // Main Page Background Color
-    foregroundColor: "#33313a", // Foreground Color
-    primaryColor: "#38cdee", // Neon Color
-    secondaryColor: "#4edcff", // Underglow Color
-    textColor: "#bebebe",
-    subTextColor: "#616161",
-    font: "Consolas, Lucida Sans Typewriter, Lucida Console, Monaco, Bitstream Vera Sans Mono, monospace",
+    backgroundColor: "#222", // Main Page Background Color
+    foregroundColor: "#333", // Foreground Color
+    primaryColor: "#8f0", // Neon Color
+    secondaryColor: "#ff0", // Underglow Color
+    textColor: "#bbb",
+    subTextColor: "#666",
+    font: "Rubik, sans-serif, Consolas, Lucida Sans Typewriter, Lucida Console, Monaco, Bitstream Vera Sans Mono, monospace",
     particleEffect: true,
 };
 
@@ -24,7 +24,7 @@ export let pageStyling = {
 
 export let navigation = {
     navLogo: { // Navigation Logo
-        enabled: true, // Do you want to use a Branding?
+        enabled: false, // Do you want to use a Branding?
         isImage: false, // Do you want to use an Image? If not, alt text will be used
         imageURL: "https://www.wilsonfamilychiropracticcenter.net/wp-content/uploads/2018/12/placeholder-logo-2.png",
         logoWidth: "75px", // Size of your logo, adjustable without the CSS
@@ -33,33 +33,30 @@ export let navigation = {
     },
 
     leftNavigation: [ // Add items to the left side of the navigation Bar
-        {
-            text: "_External",
-            url: "#",
-        },
+
     ],
 
     rightNavigation: [ // Add items to the right side of the navigation Bar
         {
-            text: "_About Me", // Text Value
-            url: "#aboutme", // Anchor points or External URLS, you may have to edit the App.js to add Anchors
+            text: "Sobre", // Text Value
+            url: "#sobre", // Anchor points or External URLS, you may have to edit the App.js to add Anchors
         },
         {
-            text: "_Portfolio",
+            text: "Portfolio",
             url: "#portfolio",
         },
         {
-            text: "_Experience",
-            url: "#experience",
+            text: "Experiência",
+            url: "#experiencia",
         },
         {
-            text: "_Skills",
-            url: "#skills",
+            text: "Habilidades",
+            url: "#habilidades",
         },
-        {
-            text: "_Contact",
-            url: "#",
-        },
+        // {
+        //     text: "Contato",
+        //     url: "#",
+        // },
     ],
 
     // Enable / Disable a Resume Button to allow a user to download your RESUME
@@ -67,54 +64,44 @@ export let navigation = {
     resumeBtn: {
         enabled: true, // Enable / Disable
         downloadIcon: true, // Show Icon
-        text: "Resume", // Text on Button
-        url: "https://google.com", // Make sure to include https:// or http://. This is the download link to your stored Resume
+        text: "Currículo", // Text on Button
+        url: "https://drive.google.com/file/d/18wSbtSqmP9-5wA1y5B9_AY0zbhpWT8on/view?usp=sharing", // Make sure to include https:// or http://. This is the download link to your stored Resume
     }
 };
 
 // Information ------------------------------------------------------------------------
 
 export let information = {
-    fullName: "John D. Doe", // Name in Profile Banner
-    welcomeMsg: "Welcome! I am,", // Welcome subheading above Name
-    aboutMe: "Short Description of yourself!", // Short Description
-    companyName: "Position @ Company", // Your position @ a Company
+    fullName: "Gustavo Valente", // Name in Profile Banner
+    welcomeMsg: "Olá 👋, me chamo", // Welcome subheading above Name
+    aboutMe: "Sou um dev front! 🌱", // Short Description
+    companyName: "Desenvolvedor front end | Designer @ SaibroTech", // Your position @ a Company
     // Replace with the URL to your image (URL or Local Image)
-    profilePhoto: "https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+    profilePhoto: "https://media-exp1.licdn.com/dms/image/C5603AQGIm1ssJ5lUMw/profile-displayphoto-shrink_200_200/0/1516881149265?e=1655337600&v=beta&t=aEvY6DY6JgUJirP3m2NseCmWWnj8bBy7CNo3zZztxnQ",
 };
 
 // Socials ----------------------------------------------------------------------------
 
 export let socials = {
-    twitterURL: "https://twitter.com/", // Twitter
-    githubURL: "https://github.com/", // Github
-    linkedinURL: "https://www.linkedin.com/in/", // LinkedIn
+    // twitterURL: "https://twitter.com/", // Twitter
+    githubURL: "https://github.com/gutivalente", // Github
+    linkedinURL: "https://www.linkedin.com/in/gutivalente/", // LinkedIn
 };
 
 // About Me ----------------------------------------------------------------------------
 
 export let aboutMe = {
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
-    quote: "\"The Best Preparation For Tommorow Is Doing Your Best Today.\"",
+    description: "Trabalhando com desenvolvimento front end (Angular, TypeScript) e prototipação de interfaces (Figma). Experiência com projetos que utilizam HTML, CSS, Sass, SVG, JavaScript, Git, Angular Material, Mapbox, Docker, Redux e Akita. Aprendendo React no momento. Graduado em Design (com foco em game design), pós-graduado em Ilustração.",
+    quote: "",
 };
 
 // Portfolio ---------------------------------------------------------------------------
 
 export let portfolioCards = [
     {
-        projectTitle: "My Project 1",
-        projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
-        projectURL: "https://github.com/",
-    },
-    {
-        projectTitle: "My Project 2",
-        projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
-        projectURL: "https://github.com/",
-    },
-    {
-        projectTitle: "My Project 3",
-        projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
-        projectURL: "https://github.com/",
+        projectTitle: "Aluracord Glitch",
+        projectDesc: "Projeto do Imersão React da Alura, feito em React e Next.js. É uma aplicação de chat simples que imita um pouco da interface do Discord. Foi criado para exercitar conhecimentos de React e Next.js.",
+        projectURL: "https://github.com/gutivalente/aluracord-glitch",
     },
 ];
 
@@ -123,37 +110,30 @@ export let portfolioCards = [
 export let experience = {
     experiences: [ // Preferably, sort by newest first
         {
-            companyLogo: "", // Leave Blank for Template Logo
-            companyName: "The New Company", // Company Name
-            companyLocation: "Selangor, Malaysia", // Location of Company
+            companyLogo: "https://www.saibro.tech/assets/img/logo-color.png", // Leave Blank for Template Logo
+            companyName: "SaibroTech", // Company Name
+            companyLocation: "Florianópolis - SC", // Location of Company
             roles: [ // Each company can have multiple Roles
                 {
-                    role: "Software Engineer",
-                    type: "Full-Time", // Full-Time, Part-Time, Internship, etc...
-                    startPeriod: "Apr 2020", // Preferable format
-                    endPeriod: "Present", // End result will look like "Apr 2020 - Present"
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
-                },
-                {
-                    role: "Intern",
-                    type: "Internship", // Full-Time, Part-Time, Internship, etc...
-                    startPeriod: "Jan 2020", // Preferable format
-                    endPeriod: "Apr 2020", // End result will look like "Apr 2020 - Present"
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
+                    role: "Desenvolvedor front end | Designer",
+                    type: "", // Full-Time, Part-Time, Internship, etc...
+                    startPeriod: "Mar 2021", // Preferable format
+                    endPeriod: "Presente", // End result will look like "Apr 2020 - Present"
+                    description: "Desenvolvimento de software; Prototipação (Figma); Programação (Angular); Testes e correções de bugs.",
                 },
             ],
         },
         {
-            companyLogo: "", // Leave Blank for Template Logo
-            companyName: "The Old Company", // Company Name
-            companyLocation: "United Kingdom", // Location of Company
+            companyLogo: "https://avatars.akamai.steamstatic.com/513c75fe949489efa5046ca0b66d02b6d4e53c17_full.jpg", // Leave Blank for Template Logo
+            companyName: "Freelancer", // Company Name
+            companyLocation: "", // Location of Company
             roles: [ // Each company can have multiple Roles
                 {
-                    role: "Junior Full-Stack Developer",
-                    type: "Part-Time", // Full-Time, Part-Time, Internship, etc...
-                    startPeriod: "Dec 2019", // Preferable format
-                    endPeriod: "Jan 2020", // End result will look like "Apr 2020 - Present"
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales lectus ex, nec lacinia libero finibus in. Sed at mattis justo, feugiat cursus sapien. Proin blandit nisi nec mi iaculis, ac viverra felis sollicitudin. Aliquam rhoncus porta magna, non lacinia ipsum aliquam vitae. Vivamus fermentum dapibus mauris, varius consequat velit viverra egestas. Nunc eget lacus in tortor ultricies dignissim eget a eros. Suspendisse volutpat sit amet lorem non consectetur. Fusce sed ultricies felis.",
+                    role: "Designer | Ilustrador",
+                    type: "", // Full-Time, Part-Time, Internship, etc...
+                    startPeriod: "2017", // Preferable format
+                    endPeriod: "2021", // End result will look like "Apr 2020 - Present"
+                    description: "Design de logo; Criação de mockups; Criação de arte para perfis de redes sociais; Design de cardápios, cartões de visita (normal e virtual), convites, banners, cartilhas.",
                 },
             ],
         },
@@ -174,14 +154,42 @@ export let skills = {
     skillsData: [
         // Each Skill will have the title, value for the chart, color, experience (years, months) and a desscription on the task
         // Some examples are shown below
-        { title: 'ReactJS', value: 45, color: '#28ACEA', experience: '3 years',
-        description: 'Built multiple ReactJS based websites with integration of NodeJS and Redux'},
-        { title: 'Java', value: 25, color: '#19CEEB', experience: '2 years',
-        description: 'Worked on multiple Minecraft Plugins and Text-Based Adventure Survival CLI game'},
-        { title: 'C++', value: 10, color: '#09EBEE', experience: '1 year',
-        description: 'Sorting system of user class information'},
-        { title: 'Others', value: 20, color: '#00FEEF', experience: '1 year',
-        description: 'Experience with Game Development such as Unity (C#) having 2 published games on the Play Store.'},
+        {
+            title: 'React', value: 2, color: '#3ff', experience: '',
+            description: 'Atualmente aprendendo'
+        },
+        {
+            title: 'Next.js', value: 1, color: '#777', experience: '',
+            description: 'Atualmente aprendendo'
+        },
+        {
+            title: 'Angular', value: 7, color: '#f33', experience: '',
+            description: '1 ano de experiência'
+        },
+        {
+            title: 'Redux', value: 1, color: '#83f', experience: '',
+            description: ''
+        },
+        {
+            title: 'Docker', value: 1, color: '#3bf', experience: '',
+            description: ''
+        },
+        {
+            title: 'Git', value: 6, color: '#f83', experience: '',
+            description: 'Uso diário'
+        },
+        {
+            title: 'SVG', value: 5, color: '#ff3', experience: '',
+            description: 'Criação de diagramas e outras renderizações em vetor'
+        },
+        {
+            title: 'Mapbox', value: 2, color: '#777', experience: '',
+            description: ''
+        },
+        {
+            title: 'Figma', value: 5, color: '#83f', experience: '',
+            description: ''
+        },
     ],
 }
 

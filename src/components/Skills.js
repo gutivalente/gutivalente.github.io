@@ -17,22 +17,23 @@ function Skills() {
             <Row>
                 <Col xs={12} sm={6}>
                     <PieChart
-                    data={skills.skillsData}
-                    label={({ dataEntry }) => dataEntry.title}
-                    labelStyle={(index) => ({
-                        fill: skills.skillsData[index].color,
-                        fontSize: skills.fontSize,
-                    })}
-                    radius={skills.radius}
-                    labelPosition={skills.labelPosition}
-                    lineWidth={skills.lineWidth}
-                    paddingAngle={skills.paddingAngle}
+                        data={skills.skillsData}
+                        label={({ dataEntry }) => dataEntry.title}
+                        labelStyle={(index) => ({
+                            fill: skills.skillsData[index].color,
+                            fontSize: skills.fontSize,
+                        })}
+                        radius={skills.radius}
+                        labelPosition={skills.labelPosition}
+                        lineWidth={skills.lineWidth}
+                        paddingAngle={skills.paddingAngle}
                     />
                 </Col>
                 <Col xs={12} sm={6} className="skills-panel">
-                    {skills.skillsData.map((skill) => 
+                    {skills.skillsData.map((skill) =>
                         <>
-                            <p><span className="skills-highlight">{skill.title}</span><br />- {skill.description}<br />Experience: <span className="skills-highlight">{skill.experience}</span></p>
+                            {/* <p><span className="skills-highlight">{skill.title}</span><br />- {skill.description}<br />Experience: <span className="skills-highlight">{skill.experience}</span></p> */}
+                            <p><span className="skills-highlight">{skill.title}</span><br />{skill.description ? '- ' + skill.description : null}</p>
                         </>
                     )}
                 </Col>

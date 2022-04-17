@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { Container, Col, 
-    Row } from 'react-bootstrap';
+import {
+    Container, Col,
+    Row
+} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../css/Profile.css';
@@ -25,14 +27,14 @@ function Profile() {
                         <img className="profile-img" src={information.profilePhoto} alt={information.fullName + "'s profile"}></img>
                     </div>
                     <div className="profile-socials">
-                        <a target="_blank" rel="noreferrer" href={socials.twitterURL} className="profile-twitter">
+                        {/* <a target="_blank" rel="noreferrer" href={socials.twitterURL} className="profile-twitter">
                             <FontAwesomeIcon icon = { faTwitter } />
-                        </a>
+                        </a> */}
                         <a target="_blank" rel="noreferrer" href={socials.githubURL} className="profile-github">
-                            <FontAwesomeIcon icon = { faGithub } />
+                            <FontAwesomeIcon icon={faGithub} />
                         </a>
                         <a target="_blank" rel="noreferrer" href={socials.linkedinURL} className="profile-linkedin">
-                            <FontAwesomeIcon icon = { faLinkedin } />
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </div>
                 </Col>

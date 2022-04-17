@@ -20,7 +20,7 @@ import { pageStyling } from './EditMe';
 
 function App() {
 
-  useEffect(() => {    
+  useEffect(() => {
     var root = document.querySelector(':root');
     root.style.setProperty('--bg-color', pageStyling.backgroundColor);
     root.style.setProperty('--bg-over', pageStyling.foregroundColor);
@@ -47,7 +47,7 @@ function App() {
                   }
                 },
                 size: {
-                  value: 3, 
+                  value: 3,
                 },
                 move: {
                   enable: true,
@@ -79,19 +79,19 @@ function App() {
           />
         )}
         <Profile />
-        <a name="aboutme" />
+        <a name="sobre" href='#sobre'> </a>
         <AboutMe />
-        <a name="portfolio" />
+        <a name="portfolio" href='#portfolio'> </a>
         <Portfolio />
-        <a name="experience" />
+        <a name="experiencia" href='#experiencia'> </a>
         <Experience />
-        <a name="skills" />
+        <a name="habilidades" href='#habilidades'> </a>
         <Skills />
       </header>
     </div>
   );
 
-  
+
 }
 
 export default App;

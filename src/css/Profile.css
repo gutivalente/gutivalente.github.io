@@ -153,19 +153,19 @@
         position: absolute;
     }
 
-    .profile-twitter {
+    /* .profile-twitter {
         left: 20%;
         bottom: -20%;
-    }
+    } */
 
     .profile-github {
-        left: 46%;
+        left: 35%;
         bottom: -30%;
     }
 
     .profile-linkedin {
-        right: 20%;
-        bottom: -20%;
+        right: 35%;
+        bottom: -30%;
     }
 
     .profile-socials {
@@ -204,19 +204,19 @@
 
     }
 
-    .profile-twitter {
+    /* .profile-twitter {
         left: 25%;
         bottom: -15%;
-    }
+    } */
 
     .profile-github {
-        left: 45%;
+        left: 35%;
         bottom: -25%;
     }
 
     .profile-linkedin {
-        right: 25%;
-        bottom: -15%;
+        right: 35%;
+        bottom: -25%;
     }
     
     .column-status {
@@ -266,19 +266,19 @@
 
     }
 
-    .profile-twitter {
+    /* .profile-twitter {
         left: 25%;
         bottom: -10%;
-    }
+    } */
 
     .profile-github {
-        left: 47.5%;
+        left: 35%;
         bottom: -20%;
     }
 
     .profile-linkedin {
-        right: 25%;
-        bottom: -10%;
+        right: 35%;
+        bottom: -20%;
     }
     
     .greeting-sub {

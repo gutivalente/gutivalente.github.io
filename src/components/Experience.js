@@ -10,24 +10,25 @@ function Experience() {
     return (
         <Row className="experience-container">
             <Col xs={12} className="experience-section">
-                {experience.experiences.map((company) => 
+                {experience.experiences.map((company) =>
                     <Row className="company">
-                        <Col xs={12} md={3} style={{textAlign: "right"}}>
-                            <img className="companyLogo" src={clsx({
-                                'https://quarkerp.com.br/images/logo-placeholder.png' : company.companyLogo == "",
-                                [company.companyLogo] : company.companyLogo != "",
+                        <Col xs={12} md={3} style={{ textAlign: "right" }}>
+                            <img className="companyLogo" alt='' src={clsx({
+                                'https://quarkerp.com.br/images/logo-placeholder.png': company.companyLogo === "",
+                                [company.companyLogo]: company.companyLogo !== "",
                             })} />
                         </Col>
                         <Col xs={12} md={9} className="companyDetails">
                             <p className="companyName">{company.companyName}</p>
                             <p className="companyLocation">{company.companyLocation}</p>
-                              {company.roles.map((role) =>
+                            {company.roles.map((role) =>
                                 <>
                                     <p className="role">• {role.role}</p>
-                                    <p className="role-time">{role.startPeriod} - {role.endPeriod} • {role.type}</p>
+                                    {/* <p className="role-time">{role.startPeriod} - {role.endPeriod} • {role.type}</p> */}
+                                    <p className="role-time">{role.startPeriod} - {role.endPeriod}</p>
                                     <p className="role-desc">{role.description}</p>
                                 </>
-                              )}  
+                            )}
                         </Col>
                     </Row>
                 )}

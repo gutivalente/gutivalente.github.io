@@ -21,6 +21,8 @@
 
 .companyLogo {
     height: 10em;
+    max-width: 10em;
+    object-fit: scale-down;
 }
 
 .companyDetails {
