@@ -14,6 +14,11 @@
   /* justify-content: center; */
 }
 
+section {
+  width: 100%;
+  text-align: -webkit-center;
+}
+
 .particle-js {
   width: 80%;
   height: 80%;

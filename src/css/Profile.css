@@ -76,7 +76,7 @@
 
 .profile-twitter, .profile-linkedin, .profile-github {
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     transition: font-size 0.2s;
     pointer-events: all;
@@ -141,7 +141,7 @@
 
     .profile-twitter, .profile-linkedin, .profile-github {
         color: var(--primary-color);
-        font-size: 30px;
+        font-size: 50px;
         position: absolute;
         text-align: center;
         transition: font-size 0.2s;
@@ -149,7 +149,7 @@
 
     .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
         color: var(--secondary-color);
-        font-size: 35px;
+        font-size: 55px;
         position: absolute;
     }
 
@@ -196,11 +196,11 @@
     }
 
     .profile-twitter, .profile-linkedin, .profile-github {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
-        font-size: 40px;
+        font-size: 55px;
 
     }
 
@@ -258,11 +258,11 @@
     }
 
     .profile-twitter, .profile-linkedin, .profile-github {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
-        font-size: 40px;
+        font-size: 55px;
 
     }
 

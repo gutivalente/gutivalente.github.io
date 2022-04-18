@@ -8,6 +8,13 @@
     color: var(--text-color);
 }
 
+.skills-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
 .skills-highlight {
     color: var(--primary-color);
     text-shadow: 0 0 2px var(--primary-color);

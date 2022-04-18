@@ -12,9 +12,11 @@
     justify-content: center;
     padding: 0 5%;
     font-size: 1em;
+    white-space: pre-line;
 }
 
-.sub-quote {
+.sub-quote,
+.text-highlight {
     margin-top: 2em;
     color: var(--primary-color);
 }

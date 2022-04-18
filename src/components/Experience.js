@@ -1,8 +1,7 @@
-import React from 'react';
 import clsx from 'clsx';
-
-import { Row, Col } from 'react-bootstrap';
-
+import parse from 'html-react-parser';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 import '../css/Experience.css';
 import { experience } from '../EditMe';
 
@@ -26,7 +25,7 @@ function Experience() {
                                     <p className="role">• {role.role}</p>
                                     {/* <p className="role-time">{role.startPeriod} - {role.endPeriod} • {role.type}</p> */}
                                     <p className="role-time">{role.startPeriod} - {role.endPeriod}</p>
-                                    <p className="role-desc">{role.description}</p>
+                                    <p className="role-desc">{parse(role.description)}</p>
                                 </>
                             )}
                         </Col>

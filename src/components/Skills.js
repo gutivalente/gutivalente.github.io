@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { PieChart } from 'react-minimal-pie-chart';
-import axios from 'axios';
-
 import '../css/Skills.css';
-
-import { } from '@fortawesome/free-solid-svg-icons'
-
 import { skills } from '../EditMe';
 
 function Skills() {
@@ -33,7 +28,11 @@ function Skills() {
                     {skills.skillsData.map((skill) =>
                         <>
                             {/* <p><span className="skills-highlight">{skill.title}</span><br />- {skill.description}<br />Experience: <span className="skills-highlight">{skill.experience}</span></p> */}
-                            <p><span className="skills-highlight">{skill.title}</span><br />{skill.description ? '- ' + skill.description : null}</p>
+                            <p>
+                                <img className='skills-icon' src={skill.iconUrl} alt='' />
+                                <span className="skills-highlight">{skill.title}</span><br />
+                                {skill.description ? '- ' + skill.description : null}
+                            </p>
                         </>
                     )}
                 </Col>

@@ -44,7 +44,7 @@
 /* Roles */
 
 .role, .role-time, .role-desc {
-    line-height: 1em;
+    line-height: 1.5em;
 }
 
 .role {
@@ -58,6 +58,16 @@
 
 .role-desc {
     color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .company {
+        text-align-last: left;
+    }
+
+    .companyLogo {
+        margin-bottom: 1em;
+    }
 }
 
 @media screen and (min-width: 577px) {

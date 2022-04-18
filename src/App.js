@@ -79,14 +79,18 @@ function App() {
           />
         )}
         <Profile />
-        <a name="sobre" href='#sobre'> </a>
-        <AboutMe />
-        <a name="portfolio" href='#portfolio'> </a>
-        <Portfolio />
-        <a name="experiencia" href='#experiencia'> </a>
-        <Experience />
-        <a name="habilidades" href='#habilidades'> </a>
-        <Skills />
+        <section id='sobre'>
+          <AboutMe />
+        </section>
+        <section id='portfolio'>
+          <Portfolio />
+        </section>
+        <section id='experiencia'>
+          <Experience />
+        </section>
+        <section id='habilidades'>
+          <Skills />
+        </section>
       </header>
     </div>
   );

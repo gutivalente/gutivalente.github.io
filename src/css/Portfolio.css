@@ -20,6 +20,7 @@
     border-radius: 0.8em;
     box-shadow: 0 0 5px var(--primary-color);
     color: var(--text-color);
+    padding: 1em;
 }
 
 .card-title {
@@ -37,13 +38,31 @@
     text-align: right;
 }
 
-.url-icon, .url-icon:active, .url-icon:visited {
+.url-icon,
+.url-icon:active,
+.url-icon:visited,
+.url-icon:hover {
     text-decoration: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    margin-left: 2em;
+    margin-bottom: 0.4em;
+}
+
+.url-icon,
+.url-icon:active,
+.url-icon:visited {
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
 .url-icon:hover {
+    border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
+}
+
+.card-img {
+    padding: 0 2em;
 }
 
 .card-desc {
@@ -51,4 +70,8 @@
     font-size: 0.8em;
     text-align: left;
     overflow-y: auto;
+}
+
+.text-highlight {
+    color: var(--primary-color);
 }

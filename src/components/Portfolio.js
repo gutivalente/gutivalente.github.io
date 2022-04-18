@@ -1,11 +1,10 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import parse from 'html-react-parser';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import '../css/Portfolio.css';
-
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-
 import { portfolioCards } from '../EditMe';
 
 function Portfolio() {
@@ -17,10 +16,20 @@ function Portfolio() {
                         <div className="card-info">
                             <Row>
                                 <Col xs={10} className="card-title">{card.projectTitle}</Col>
-                                <Col xs={2} className="card-external-url"><a href={card.projectURL} target='_blank' rel='noreferrer' className="url-icon"><FontAwesomeIcon icon={faExternalLinkAlt} /></a></Col>
                             </Row>
                             <Row>
-                                <Col className="card-desc">{card.projectDesc}</Col>
+                                <img className='card-img' src={card.projectImage} alt='' />
+                            </Row>
+                            <Row>
+                                <Col className="card-desc">{parse(card.projectDesc)}</Col>
+                            </Row>
+                            <Row>
+                                <a href={card.projectSourceURL} target='_blank' rel='noreferrer' className="url-icon">
+                                    <FontAwesomeIcon icon={faGithub} /> Fonte
+                                </a>
+                                <a href={card.projectURL} target='_blank' rel='noreferrer' className="url-icon">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} /> Projeto
+                                </a>
                             </Row>
                         </div>
                     </Col>

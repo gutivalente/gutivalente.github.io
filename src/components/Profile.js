@@ -1,18 +1,10 @@
-import React from 'react';
-
-import {
-    Container, Col,
-    Row
-} from 'react-bootstrap';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import '../css/Profile.css';
-
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
 // Value Import
 import { information, socials } from '../EditMe';
-
 
 function Profile() {
     return (

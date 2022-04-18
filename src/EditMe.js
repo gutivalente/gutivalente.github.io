@@ -1,3 +1,5 @@
+import aluracordGlitchImg from './assets/aluracord-glitch.png';
+
 /* 
 
 For CSS (Colours) editing, head to 'css/root.css'
@@ -42,7 +44,7 @@ export let navigation = {
             url: "#sobre", // Anchor points or External URLS, you may have to edit the App.js to add Anchors
         },
         {
-            text: "Portfolio",
+            text: "Portfólio",
             url: "#portfolio",
         },
         {
@@ -91,7 +93,11 @@ export let socials = {
 // About Me ----------------------------------------------------------------------------
 
 export let aboutMe = {
-    description: "Trabalhando com desenvolvimento front end (Angular, TypeScript) e prototipação de interfaces (Figma). Experiência com projetos que utilizam HTML, CSS, Sass, SVG, JavaScript, Git, Angular Material, Mapbox, Docker, Redux e Akita. Aprendendo React no momento. Graduado em Design (com foco em game design), pós-graduado em Ilustração.",
+    description: `
+        Trabalhando com desenvolvimento front end (<span class='text-highlight'>Angular</span>, <span class='text-highlight'>TypeScript</span>) e prototipação de interfaces (<span class='text-highlight'>Figma</span>). <br/>
+        Experiência com projetos que utilizam <span class='text-highlight'>HTML</span>, <span class='text-highlight'>CSS</span>, <span class='text-highlight'>Sass</span>, <span class='text-highlight'>SVG</span>, <span class='text-highlight'>JavaScript</span>, <span class='text-highlight'>Git</span>, <span class='text-highlight'>Angular Material</span>, <span class='text-highlight'>Mapbox</span>, <span class='text-highlight'>Docker</span>, <span class='text-highlight'>Redux</span> e <span class='text-highlight'>Akita</span>. <br/>
+        Aprendendo <span class='text-highlight'>React</span> no momento. <br/>
+        Graduado em Design (com foco em game design), pós-graduado em Ilustração.`,
     quote: "",
 };
 
@@ -100,8 +106,10 @@ export let aboutMe = {
 export let portfolioCards = [
     {
         projectTitle: "Aluracord Glitch",
-        projectDesc: "Projeto do Imersão React da Alura, feito em React e Next.js. É uma aplicação de chat simples que imita um pouco da interface do Discord. Foi criado para exercitar conhecimentos de React e Next.js.",
-        projectURL: "https://github.com/gutivalente/aluracord-glitch",
+        projectImage: aluracordGlitchImg,
+        projectDesc: "Projeto do Imersão React da Alura, feito usando <span class='text-highlight'>React</span> e <span class='text-highlight'>Next.js</span>, com o propósito de exercitar conhecimentos dessas tecnologias. É uma aplicação de chat simples que imita um pouco a interface do Discord.",
+        projectSourceURL: 'https://github.com/gutivalente/aluracord-glitch',
+        projectURL: "https://aluracord-glitch.vercel.app/",
     },
 ];
 
@@ -119,7 +127,12 @@ export let experience = {
                     type: "", // Full-Time, Part-Time, Internship, etc...
                     startPeriod: "Mar 2021", // Preferable format
                     endPeriod: "Presente", // End result will look like "Apr 2020 - Present"
-                    description: "Desenvolvimento de software; Prototipação (Figma); Programação (Angular); Testes e correções de bugs.",
+                    description: `
+                        Desenvolvimento de software: <br/>
+                        - Prototipação (Figma); <br/>
+                        - Programação (Angular); <br/>
+                        - Testes e correções de bugs.
+                    `,
                 },
             ],
         },
@@ -133,7 +146,12 @@ export let experience = {
                     type: "", // Full-Time, Part-Time, Internship, etc...
                     startPeriod: "2017", // Preferable format
                     endPeriod: "2021", // End result will look like "Apr 2020 - Present"
-                    description: "Design de logo; Criação de mockups; Criação de arte para perfis de redes sociais; Design de cardápios, cartões de visita (normal e virtual), convites, banners, cartilhas.",
+                    description: `
+                        - Design de logo; <br/>
+                        - Criação de mockups; <br/>
+                        - Criação de arte para perfis de redes sociais; <br/>
+                        - Design de cardápios, cartões de visita (normal e virtual), convites, banners, cartilhas.
+                    `,
                 },
             ],
         },
@@ -155,39 +173,39 @@ export let skills = {
         // Each Skill will have the title, value for the chart, color, experience (years, months) and a desscription on the task
         // Some examples are shown below
         {
-            title: 'React', value: 2, color: '#3ff', experience: '',
+            title: 'React', value: 2, color: '#3ef', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', experience: '',
             description: 'Atualmente aprendendo'
         },
         {
-            title: 'Next.js', value: 1, color: '#777', experience: '',
+            title: 'Next.js', value: 1, color: '#777', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', experience: '',
             description: 'Atualmente aprendendo'
         },
         {
-            title: 'Angular', value: 7, color: '#f33', experience: '',
+            title: 'Angular', value: 7, color: '#c44', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg', experience: '',
             description: '1 ano de experiência'
         },
         {
-            title: 'Redux', value: 1, color: '#83f', experience: '',
+            title: 'Redux', value: 1, color: '#95d', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', experience: '',
             description: ''
         },
         {
-            title: 'Docker', value: 1, color: '#3bf', experience: '',
+            title: 'Docker', value: 1, color: '#3ac', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg', experience: '',
             description: ''
         },
         {
-            title: 'Git', value: 6, color: '#f83', experience: '',
+            title: 'Git', value: 6, color: '#f52', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', experience: '',
             description: 'Uso diário'
         },
         {
-            title: 'SVG', value: 5, color: '#ff3', experience: '',
+            title: 'SVG', value: 5, color: '#fa3', iconUrl: 'https://cdn.worldvectorlogo.com/logos/svg-2.svg', experience: '',
             description: 'Criação de diagramas e outras renderizações em vetor'
         },
         {
-            title: 'Mapbox', value: 2, color: '#777', experience: '',
+            title: 'Mapbox', value: 2, color: '#26e', iconUrl: 'https://seeklogo.com/images/M/mapbox-logo-D6FDDD219C-seeklogo.com.png', experience: '',
             description: ''
         },
         {
-            title: 'Figma', value: 5, color: '#83f', experience: '',
+            title: 'Figma', value: 5, color: '#b9a', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', experience: '',
             description: ''
         },
     ],
