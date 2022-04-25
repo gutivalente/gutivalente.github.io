@@ -24,9 +24,11 @@ function Portfolio() {
                                 <Col className="card-desc">{parse(card.projectDesc)}</Col>
                             </Row>
                             <Row>
-                                <a href={card.projectSourceURL} target='_blank' rel='noreferrer' className="url-icon">
-                                    <FontAwesomeIcon icon={faGithub} /> Fonte
-                                </a>
+                                {!!card.projectSourceURL &&
+                                    <a href={card.projectSourceURL} target='_blank' rel='noreferrer' className="url-icon">
+                                        <FontAwesomeIcon icon={faGithub} /> Fonte
+                                    </a>
+                                }
                                 <a href={card.projectURL} target='_blank' rel='noreferrer' className="url-icon">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} /> Projeto
                                 </a>

@@ -1,4 +1,5 @@
 import aluracordGlitchImg from './assets/aluracord-glitch.png';
+import untitledGameProject from './assets/untitled-game-project.png';
 
 /* 
 
@@ -110,6 +111,13 @@ export let portfolioCards = [
         projectDesc: "Projeto do Imersão React da Alura, feito usando <span class='text-highlight'>React</span> e <span class='text-highlight'>Next.js</span>, com o propósito de exercitar conhecimentos dessas tecnologias. É uma aplicação de chat simples que imita um pouco a interface do Discord.",
         projectSourceURL: 'https://github.com/gutivalente/aluracord-glitch',
         projectURL: "https://aluracord-glitch.vercel.app/",
+    },
+    {
+        projectTitle: "Jogo Analógico",
+        projectImage: untitledGameProject,
+        projectDesc: "Projeto do meu portfólio de ilustrador, feito usando <span class='text-highlight'>Inkscape</span> e <span class='text-highlight'>Gimp</span>, com o propósito de exercitar conhecimentos dessas tecnologias e mostrar meu trabalho. É um protótipo de um jogo analógico que usa um tabuleiro modular e cartas com ilustrações de monstros e outros objetos.",
+        projectSourceURL: '',
+        projectURL: "https://www.behance.net/gallery/141938111/Untitled-Board-Card-Game-Project",
     },
 ];
 
