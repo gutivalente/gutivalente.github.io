@@ -10,6 +10,8 @@
     --secondary-color: none;
     --font: none;
     --text-color: none;
+    
+    scroll-behavior: smooth;
 }
 
 /* 

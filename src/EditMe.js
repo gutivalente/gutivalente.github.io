@@ -13,12 +13,12 @@ Ofcourse you may take full advantage of editing it yourself through the code if 
 // Page Styling ------------------------------------------------------------------
 
 export let pageStyling = {
-    backgroundColor: "#222", // Main Page Background Color
-    foregroundColor: "#333", // Foreground Color
-    primaryColor: "#8f0", // Neon Color
-    secondaryColor: "#ff0", // Underglow Color
-    textColor: "#bbb",
-    subTextColor: "#666",
+    backgroundColor: "#282220", // Main Page Background Color
+    foregroundColor: "#383230", // Foreground Color
+    primaryColor: "#4f8", // Neon Color
+    secondaryColor: "#2fb", // Underglow Color
+    textColor: "#b8b2b0",
+    subTextColor: "#787270",
     font: "Rubik, sans-serif, Consolas, Lucida Sans Typewriter, Lucida Console, Monaco, Bitstream Vera Sans Mono, monospace",
     particleEffect: true,
 };

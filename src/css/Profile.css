@@ -74,7 +74,9 @@
     font-size: 1em;
 }
 
-.profile-twitter, .profile-linkedin, .profile-github {
+.profile-twitter,
+.profile-linkedin,
+.profile-github {
     color: var(--primary-color);
     font-size: 50px;
     text-align: center;
@@ -139,7 +141,9 @@
         font-size: 1em;
     }
 
-    .profile-twitter, .profile-linkedin, .profile-github {
+    .profile-twitter,
+    .profile-linkedin,
+    .profile-github {
         color: var(--primary-color);
         font-size: 50px;
         position: absolute;
@@ -147,7 +151,9 @@
         transition: font-size 0.2s;
     }
 
-    .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
+    .profile-twitter:hover,
+    .profile-linkedin:hover,
+    .profile-github:hover {
         color: var(--secondary-color);
         font-size: 55px;
         position: absolute;
@@ -195,11 +201,15 @@
         line-height: 1.2em;
     }
 
-    .profile-twitter, .profile-linkedin, .profile-github {
+    .profile-twitter,
+    .profile-linkedin,
+    .profile-github {
         font-size: 50px;
     }
 
-    .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
+    .profile-twitter:hover,
+    .profile-linkedin:hover,
+    .profile-github:hover {
         font-size: 55px;
 
     }
@@ -257,11 +267,15 @@
         position: relative;
     }
 
-    .profile-twitter, .profile-linkedin, .profile-github {
+    .profile-twitter,
+    .profile-linkedin,
+    .profile-github {
         font-size: 50px;
     }
 
-    .profile-twitter:hover, .profile-linkedin:hover, .profile-github:hover {
+    .profile-twitter:hover,
+    .profile-linkedin:hover,
+    .profile-github:hover {
         font-size: 55px;
 
     }
