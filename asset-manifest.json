@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d915f451.chunk.css",
-    "main.js": "/static/js/main.e5ea2b78.chunk.js",
-    "main.js.map": "/static/js/main.e5ea2b78.chunk.js.map",
+    "main.css": "/static/css/main.03790c0f.chunk.css",
+    "main.js": "/static/js/main.99e56515.chunk.js",
+    "main.js.map": "/static/js/main.99e56515.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3ae9d116.js",
     "runtime-main.js.map": "/static/js/runtime-main.3ae9d116.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d9af633a.chunk.js.map": "/static/js/3.d9af633a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.d915f451.chunk.css.map": "/static/css/main.d915f451.chunk.css.map",
+    "static/css/main.03790c0f.chunk.css.map": "/static/css/main.03790c0f.chunk.css.map",
     "static/js/2.a48c55cd.chunk.js.LICENSE.txt": "/static/js/2.a48c55cd.chunk.js.LICENSE.txt",
     "static/media/aluracord-glitch.5d3ebb1e.png": "/static/media/aluracord-glitch.5d3ebb1e.png",
     "static/media/untitled-game-project.05edfd8b.png": "/static/media/untitled-game-project.05edfd8b.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.3ae9d116.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.a48c55cd.chunk.js",
-    "static/css/main.d915f451.chunk.css",
-    "static/js/main.e5ea2b78.chunk.js"
+    "static/css/main.03790c0f.chunk.css",
+    "static/js/main.99e56515.chunk.js"
   ]
 }
