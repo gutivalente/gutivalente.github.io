@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
+
       <header className="App-header" >
         {pageStyling.particleEffect && (
           <Particles className="particle-js"
@@ -79,15 +80,19 @@ function App() {
           />
         )}
         <Profile />
+
         <section id='sobre'>
           <AboutMe />
         </section>
+
         <section id='portfolio'>
           <Portfolio />
         </section>
+
         <section id='experiencia'>
           <Experience />
         </section>
+
         <section id='habilidades'>
           <Skills />
         </section>

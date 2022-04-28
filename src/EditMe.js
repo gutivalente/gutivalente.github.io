@@ -1,5 +1,7 @@
 import aluracordGlitchImg from './assets/aluracord-glitch.png';
-import untitledGameProject from './assets/untitled-game-project.png';
+import exampleTechnicalDocumentationPageImg from './assets/example-technical-documentation-page.png';
+import untitledGameProjectImg from './assets/untitled-game-project.png';
+import saibrotechLogoImg from './assets/saibrotech-logo.png';
 
 /* 
 
@@ -78,7 +80,7 @@ export let information = {
     fullName: "Gustavo Valente", // Name in Profile Banner
     welcomeMsg: "Olá 👋, me chamo", // Welcome subheading above Name
     aboutMe: "Sou um dev front! 🌱", // Short Description
-    companyName: "Desenvolvedor front end | Designer @ SaibroTech", // Your position @ a Company
+    companyName: "Desenvolvedor front end | Designer @SaibroTech", // Your position @ a Company
     // Replace with the URL to your image (URL or Local Image)
     profilePhoto: "https://media-exp1.licdn.com/dms/image/C5603AQGIm1ssJ5lUMw/profile-displayphoto-shrink_200_200/0/1516881149265?e=1655337600&v=beta&t=aEvY6DY6JgUJirP3m2NseCmWWnj8bBy7CNo3zZztxnQ",
 };
@@ -113,8 +115,15 @@ export let portfolioCards = [
         projectURL: "https://aluracord-glitch.vercel.app/",
     },
     {
+        projectTitle: "Exercícios do freeCodeCamp",
+        projectImage: exampleTechnicalDocumentationPageImg,
+        projectDesc: "Exercícios do final do curso \"Responsive Web Design\" do freeCodeCamp, feito usando apenas <span class='text-highlight'>HTML</span> e <span class='text-highlight'>CSS</span>, com o propósito de exercitar conhecimentos dessas tecnologias, praticar layout responsivo e gerar portfólio. São 5 páginas simples: documentação, portfólio, landing page, formulário e tributo.",
+        projectSourceURL: '',
+        projectURL: "https://codepen.io/collection/waJJGm",
+    },
+    {
         projectTitle: "Jogo Analógico",
-        projectImage: untitledGameProject,
+        projectImage: untitledGameProjectImg,
         projectDesc: "Projeto do meu portfólio de ilustrador, feito usando <span class='text-highlight'>Inkscape</span> e <span class='text-highlight'>Gimp</span>, com o propósito de exercitar conhecimentos dessas tecnologias e mostrar meu trabalho. É um protótipo de um jogo analógico que usa um tabuleiro modular e cartas com ilustrações de monstros e outros objetos.",
         projectSourceURL: '',
         projectURL: "https://www.behance.net/gallery/141938111/Untitled-Board-Card-Game-Project",
@@ -126,7 +135,7 @@ export let portfolioCards = [
 export let experience = {
     experiences: [ // Preferably, sort by newest first
         {
-            companyLogo: "https://www.saibro.tech/assets/img/logo-color.png", // Leave Blank for Template Logo
+            companyLogo: saibrotechLogoImg, // Leave Blank for Template Logo
             companyName: "SaibroTech", // Company Name
             companyLocation: "Florianópolis - SC", // Location of Company
             roles: [ // Each company can have multiple Roles

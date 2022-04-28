@@ -2,6 +2,11 @@
     margin: 5em 0;
 }
 
+.skills-heading {
+    color: white;
+    margin-bottom: 1em;
+}
+
 .skills-panel {
     line-height: 1.75em;
     text-align: center;
@@ -18,6 +23,11 @@
 .skills-highlight {
     color: var(--primary-color);
     text-shadow: 0 0 2px var(--primary-color);
+}
+
+.skills-desc {
+    color: var(--sub-text-color);
+    padding-left: 40px;
 }
 
 @media screen and (min-width: 1024px) {
