@@ -1,4 +1,5 @@
 import aluracordGlitchImg from './assets/aluracord-glitch.png';
+import rpgClassTestImg from './assets/rpg-class-test.png';
 import exampleTechnicalDocumentationPageImg from './assets/example-technical-documentation-page.png';
 import untitledGameProjectImg from './assets/untitled-game-project.png';
 import saibrotechLogoImg from './assets/saibrotech-logo.png';
@@ -113,6 +114,13 @@ export let portfolioCards = [
         projectDesc: "Projeto do Imersão React da Alura, feito usando <span class='text-highlight'>React</span> e <span class='text-highlight'>Next.js</span>, com o propósito de exercitar conhecimentos dessas tecnologias. É uma aplicação de chat simples que imita um pouco a interface do Discord.",
         projectSourceURL: 'https://github.com/gutivalente/aluracord-glitch',
         projectURL: "https://aluracord-glitch.vercel.app/",
+    },
+    {
+        projectTitle: "RPG Class Test",
+        projectImage: rpgClassTestImg,
+        projectDesc: "Teste de personalidade feito usando <span class='text-highlight'>React</span>, com o propósito de exercitar conhecimentos dessa tecnologia e por lazer. É um teste de personalidade que atribui ao usuário uma classe de RPG, baseado nas suas respostas.",
+        projectSourceURL: 'https://github.com/gutivalente/rpg-class-test',
+        projectURL: "https://gutivalente.github.io/rpg-class-test/",
     },
     {
         projectTitle: "Exercícios do freeCodeCamp",
