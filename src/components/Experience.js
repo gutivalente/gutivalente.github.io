@@ -21,7 +21,15 @@ function Experience() {
             </Col>
 
             <Col xs={12} md={9} className="companyDetails">
-              <p className="companyName">{company.companyName}</p>
+              {company.companyUrl ? (
+                <p className="companyName">
+                  <a target="_blank" rel="noreferrer" href={company.companyUrl} className="companyLink">
+                    {company.companyName}
+                  </a>
+                </p>
+              ) : (
+                <p className="companyName">{company.companyName}</p>
+              )}
               <p className="companyLocation">{company.companyLocation}</p>
               {company.roles.map((role) =>
                 <>

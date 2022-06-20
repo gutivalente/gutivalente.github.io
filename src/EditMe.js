@@ -1,8 +1,10 @@
 import aluracordGlitchImg from './assets/aluracord-glitch.png';
-import rpgClassTestImg from './assets/rpg-class-test.png';
 import exampleTechnicalDocumentationPageImg from './assets/example-technical-documentation-page.png';
-import untitledGameProjectImg from './assets/untitled-game-project.png';
+import freelancerImg from './assets/freelancer.png';
+import profileImg from './assets/profile.png';
+import rpgClassTestImg from './assets/rpg-class-test.png';
 import saibrotechLogoImg from './assets/saibrotech-logo.png';
+import untitledGameProjectImg from './assets/untitled-game-project.png';
 
 /* 
 
@@ -83,7 +85,7 @@ export let information = {
     aboutMe: "Sou um dev front! 🌱", // Short Description
     companyName: "Desenvolvedor front end | Designer @SaibroTech", // Your position @ a Company
     // Replace with the URL to your image (URL or Local Image)
-    profilePhoto: "https://media-exp1.licdn.com/dms/image/C5603AQGIm1ssJ5lUMw/profile-displayphoto-shrink_200_200/0/1516881149265?e=1655337600&v=beta&t=aEvY6DY6JgUJirP3m2NseCmWWnj8bBy7CNo3zZztxnQ",
+    profilePhoto: profileImg,
 };
 
 // Socials ----------------------------------------------------------------------------
@@ -146,6 +148,7 @@ export let experience = {
             companyLogo: saibrotechLogoImg, // Leave Blank for Template Logo
             companyName: "SaibroTech", // Company Name
             companyLocation: "Florianópolis - SC", // Location of Company
+            companyUrl: "https://www.saibro.tech/",
             roles: [ // Each company can have multiple Roles
                 {
                     role: "Desenvolvedor front end | Designer",
@@ -162,9 +165,10 @@ export let experience = {
             ],
         },
         {
-            companyLogo: "https://avatars.akamai.steamstatic.com/513c75fe949489efa5046ca0b66d02b6d4e53c17_full.jpg", // Leave Blank for Template Logo
+            companyLogo: freelancerImg, // Leave Blank for Template Logo
             companyName: "Freelancer", // Company Name
             companyLocation: "", // Location of Company
+            companyUrl: "",
             roles: [ // Each company can have multiple Roles
                 {
                     role: "Designer | Ilustrador",
