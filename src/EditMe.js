@@ -4,6 +4,7 @@ import freelancerImg from './assets/freelancer.png';
 import profileImg from './assets/profile.png';
 import rpgClassTestImg from './assets/rpg-class-test.png';
 import saibrotechLogoImg from './assets/saibrotech-logo.png';
+import prumoLogoImg from './assets/prumo-logo.png';
 import untitledGameProjectImg from './assets/untitled-game-project.png';
 
 /* 
@@ -82,8 +83,8 @@ export let navigation = {
 export let information = {
     fullName: "Gustavo Valente", // Name in Profile Banner
     welcomeMsg: "Olá 👋, me chamo", // Welcome subheading above Name
-    aboutMe: "Sou um dev front! 🌱", // Short Description
-    companyName: "Desenvolvedor front end | Designer @SaibroTech", // Your position @ a Company
+    aboutMe: "Sou um programador front! 🌱", // Short Description
+    companyName: "Programador Jr @ Prumo Tecnologia", // Your position @ a Company
     // Replace with the URL to your image (URL or Local Image)
     profilePhoto: profileImg,
 };
@@ -100,9 +101,9 @@ export let socials = {
 
 export let aboutMe = {
     description: `
-        Trabalhando com desenvolvimento front end (<span class='text-highlight'>Angular</span>, <span class='text-highlight'>TypeScript</span>) e prototipação de interfaces (<span class='text-highlight'>Figma</span>). <br/>
-        Experiência com projetos que utilizam <span class='text-highlight'>HTML</span>, <span class='text-highlight'>CSS</span>, <span class='text-highlight'>Sass</span>, <span class='text-highlight'>SVG</span>, <span class='text-highlight'>JavaScript</span>, <span class='text-highlight'>Git</span>, <span class='text-highlight'>Angular Material</span>, <span class='text-highlight'>Mapbox</span>, <span class='text-highlight'>Docker</span>, <span class='text-highlight'>Redux</span> e <span class='text-highlight'>Akita</span>. <br/>
-        Aprendendo <span class='text-highlight'>React</span> no momento. <br/>
+        Trabalhando com desenvolvimento e manutenção de landing pages e blogs. <br/>
+        Experiência em projetos com <span class='text-highlight'>HTML</span>, <span class='text-highlight'>PHP</span>, <span class='text-highlight'>CSS</span>, <span class='text-highlight'>Sass</span>, <span class='text-highlight'>Stylus</span>, <span class='text-highlight'>SVG</span>, <span class='text-highlight'>JavaScript</span>, <span class='text-highlight'>TypeScript</span>, <span class='text-highlight'>Angular</span>, <span class='text-highlight'>React</span>, <span class='text-highlight'>Wordpress</span>, <span class='text-highlight'>Figma</span>, <span class='text-highlight'>Git</span> e <span class='text-highlight'>Docker</span>. <br/>
+        Estudando <span class='text-highlight'>React</span> e <span class='text-highlight'>Next.js</span> no momento. <br/>
         Graduado em Design (com foco em game design), pós-graduado em Ilustração.`,
     quote: "",
 };
@@ -120,7 +121,7 @@ export let portfolioCards = [
     {
         projectTitle: "RPG Class Test",
         projectImage: rpgClassTestImg,
-        projectDesc: "Teste de personalidade feito usando <span class='text-highlight'>React</span>, com o propósito de exercitar conhecimentos dessa tecnologia e por lazer. É um teste de personalidade que atribui ao usuário uma classe de RPG, baseado nas suas respostas.",
+        projectDesc: "Teste/quiz feito usando <span class='text-highlight'>React</span>, com o propósito de exercitar conhecimentos dessa tecnologia e por lazer. É um teste de personalidade que atribui ao usuário uma classe de RPG, baseado nas suas respostas.",
         projectSourceURL: 'https://github.com/gutivalente/rpg-class-test',
         projectURL: "https://gutivalente.github.io/rpg-class-test/",
     },
@@ -145,16 +146,34 @@ export let portfolioCards = [
 export let experience = {
     experiences: [ // Preferably, sort by newest first
         {
+            companyLogo: prumoLogoImg, // Leave Blank for Template Logo
+            companyName: "Prumo Tecnologia", // Company Name
+            companyLocation: "São Paulo - SP (remoto)", // Location of Company
+            companyUrl: "https://prumotecnologia.com.br/",
+            roles: [ // Each company can have multiple Roles
+                {
+                    role: "Programador Jr",
+                    type: "Integral", // Full-Time, Part-Time, Internship, etc...
+                    startPeriod: "Ago 2022", // Preferable format
+                    endPeriod: "Presente", // End result will look like "Apr 2020 - Present"
+                    description: `
+                        - Criação e manutenção de landing pages; <br/>
+                        - Criação e manutenção de conteúdo de sites Wordpress.
+                    `,
+                },
+            ],
+        },
+        {
             companyLogo: saibrotechLogoImg, // Leave Blank for Template Logo
             companyName: "SaibroTech", // Company Name
             companyLocation: "Florianópolis - SC", // Location of Company
             companyUrl: "https://www.saibro.tech/",
             roles: [ // Each company can have multiple Roles
                 {
-                    role: "Desenvolvedor front end | Designer",
+                    role: "Programador front-end | Designer",
                     type: "", // Full-Time, Part-Time, Internship, etc...
                     startPeriod: "Mar 2021", // Preferable format
-                    endPeriod: "Presente", // End result will look like "Apr 2020 - Present"
+                    endPeriod: "Ago 2022", // End result will look like "Apr 2020 - Present"
                     description: `
                         Desenvolvimento de software: <br/>
                         - Prototipação (Figma); <br/>
@@ -203,38 +222,30 @@ export let skills = {
         // Some examples are shown below
         {
             title: 'React', value: 2, color: '#3ef', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', experience: '',
-            description: 'Atualmente aprendendo'
+            description: 'Estudando'
         },
         {
             title: 'Next.js', value: 1, color: '#777', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', experience: '',
-            description: 'Atualmente aprendendo'
+            description: 'Estudando'
         },
         {
-            title: 'Angular', value: 7, color: '#c44', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg', experience: '',
+            title: 'Angular', value: 3, color: '#c44', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg', experience: '',
             description: '1 ano de experiência'
-        },
-        {
-            title: 'Redux', value: 1, color: '#95d', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', experience: '',
-            description: ''
         },
         {
             title: 'Docker', value: 1, color: '#3ac', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg', experience: '',
             description: ''
         },
         {
-            title: 'Git', value: 6, color: '#f52', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', experience: '',
+            title: 'Git', value: 3, color: '#f52', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', experience: '',
             description: 'Uso diário'
         },
         {
-            title: 'SVG', value: 5, color: '#fa3', iconUrl: 'https://cdn.worldvectorlogo.com/logos/svg-2.svg', experience: '',
+            title: 'SVG', value: 3, color: '#fa3', iconUrl: 'https://cdn.worldvectorlogo.com/logos/svg-2.svg', experience: '',
             description: 'Criação de diagramas e outras renderizações em vetor'
         },
         {
-            title: 'Mapbox', value: 2, color: '#26e', iconUrl: 'https://seeklogo.com/images/M/mapbox-logo-D6FDDD219C-seeklogo.com.png', experience: '',
-            description: ''
-        },
-        {
-            title: 'Figma', value: 5, color: '#b9a', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', experience: '',
+            title: 'Figma', value: 3, color: '#b9a', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', experience: '',
             description: ''
         },
     ],
